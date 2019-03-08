@@ -3,25 +3,26 @@
     "version": "1.2.1",
     "description": "An awesome QR code generator written in JavaScript.",
     "main": "awesome-qr-node.js",
+    "typings": "awesome-qr.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node start.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SumiMakito/Awesome-qr.js.git"
+        "url": "git+https://github.com/BadCoder1337/Awesome-qr.js.git"
     },
     "keywords": [
         "qr",
         "qrcode",
         "barcode"
     ],
-    "author": "Makito <sumimakito@hotmail.com>",
+    "author": "BadCoder1337",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/SumiMakito/Awesome-qr.js/issues"
+        "url": "https://github.com/BadCoder1337/Awesome-qr.js/issues"
     },
-    "homepage": "https://github.com/SumiMakito/Awesome-qr.js#readme",
+    "homepage": "https://github.com/BadCoder1337/Awesome-qr.js#readme",
     "dependencies": {
         "canvas-prebuilt": "^1.6.5-prerelease.1",
         "fs": "0.0.1-security",

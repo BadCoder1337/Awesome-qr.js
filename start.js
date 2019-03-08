@@ -2,12 +2,12 @@ let AwesomeQR = require('./awesome-qr-node');
 var fs = require('fs');
 
 new AwesomeQR().create({
-    text: 'https://github.com/Gorniv/Awesome-qr.js',
-    size: 2636,
+    text: 'https://github.com/Rainbow6-RUSSIA',
+    size: 500,
 
-    backgroundImage: './assets/angular.png',
+    backgroundImage: './assets/r6rus.png',
 
-    margin: 0,
+    margin: 15,
     typeNumber: 4,
     colorDark: "rgba(0, 0, 0, 0.8)",
     colorLight: "rgba(255, 255, 255, 1)",
