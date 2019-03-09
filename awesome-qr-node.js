@@ -1553,4 +1553,4 @@ function getAverageRGB(imgSrc) {
     return rgb;
 }
 
-module.exports = AwesomeQRCode;
+module.exports.AwesomeQRCode = AwesomeQRCode;

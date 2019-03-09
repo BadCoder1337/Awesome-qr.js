@@ -74,7 +74,7 @@ declare module 'awesome-qr' {
 		callback: (data: Uint8Array) => any
 	}
 
-	export default class AwesomeQR {
+	export class AwesomeQRCode {
 		create(options: AwesomeQrOptions): void;
 		makeCode(text: string): any;
 		clear(): void;
