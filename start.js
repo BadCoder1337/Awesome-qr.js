@@ -1,12 +1,12 @@
 let AwesomeQR = require('./awesome-qr-node');
 var fs = require('fs');
 
-new AwesomeQR().create({
+new AwesomeQR.AwesomeQRCode().create({
     text: 'https://github.com/Rainbow6-RUSSIA',
     size: 500,
 
     backgroundImage: './assets/r6rus.png',
-
+    correcorrectLevel: AwesomeQR.QRErrorCorrectLevel.H,
     margin: 15,
     typeNumber: 4,
     colorDark: "rgba(0, 0, 0, 0.8)",

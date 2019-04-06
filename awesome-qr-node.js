@@ -1498,8 +1498,6 @@ AwesomeQRCode.prototype.clear = function () {
     this._oDrawing.clear();
 };
 
-AwesomeQRCode.CorrectLevel = QRErrorCorrectLevel;
-
 function getAverageRGB(imgSrc) {
     var imgEl = new Image();
     imgEl.src = imgSrc;
@@ -1554,3 +1552,4 @@ function getAverageRGB(imgSrc) {
 }
 
 module.exports.AwesomeQRCode = AwesomeQRCode;
+module.exports.QRErrorCorrectLevel = QRErrorCorrectLevel;
