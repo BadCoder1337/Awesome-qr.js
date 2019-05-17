@@ -24,8 +24,6 @@
     },
     "homepage": "https://github.com/BadCoder1337/Awesome-qr.js#readme",
     "dependencies": {
-        "canvas-prebuilt": "^1.6.5-prerelease.1",
-        "fs": "0.0.1-security",
-        "request": "^2.87.0"
+        "canvas": "^2.5.0"
     }
 }
