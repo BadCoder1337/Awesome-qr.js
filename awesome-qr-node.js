@@ -981,7 +981,7 @@ var Drawing = (function () { // Drawing in Canvas
     var Drawing = function (htOption) {
         this._bIsPainted = false;
         this._htOption = htOption;
-        this._elCanvas = new Canvas(htOption.size, htOption.size);
+        this._elCanvas = Canvas.createCanvas(htOption.size, htOption.size);
         //this._elCanvas.width = htOption.size;
         //this._elCanvas.height = htOption.size;
         this._oContext = this._elCanvas.getContext('2d');
@@ -1013,7 +1013,7 @@ var Drawing = (function () { // Drawing in Canvas
         var viewportSize = nSize * nCount;
         var size = viewportSize + 2 * margin;
 
-        var _tCanvas = new Canvas(size, size);
+        var _tCanvas = Canvas.createCanvas(size, size);
         var _oContext = _tCanvas.getContext("2d");
         //_tCanvas.width = size;
         //_tCanvas.height = size;
@@ -1029,7 +1029,7 @@ var Drawing = (function () { // Drawing in Canvas
         _oContext.save();
         _oContext.translate(margin, margin);
 
-        var _bkgCanvas = new Canvas(size, size);
+        var _bkgCanvas = Canvas.createCanvas(size, size);
         //_bkgCanvas.width = size;
         //_bkgCanvas.height = size;
         var _bContext = _bkgCanvas.getContext("2d");
@@ -1047,7 +1047,7 @@ var Drawing = (function () { // Drawing in Canvas
             }
 
             if (false && _htOption.maskedDots) {
-                _maskCanvas = new Canvas(size, size);
+                _maskCanvas = Canvas.createCanvas(size, size);
                 //_maskCanvas.width = size;
                 //_maskCanvas.height = size;
                 _mContext = _maskCanvas.getContext("2d");
@@ -1289,7 +1289,7 @@ var Drawing = (function () { // Drawing in Canvas
         }
 
         // Scale the final image
-        var _fCanvas = new Canvas(rawSize, rawSize); //document.createElement("canvas");
+        var _fCanvas = Canvas.createCanvas(rawSize, rawSize); //document.createElement("canvas");
         var _fContext = _fCanvas.getContext("2d");
         //_fCanvas.width = rawSize;
         //_fCanvas.height = rawSize;
@@ -1503,7 +1503,7 @@ function getAverageRGB(imgSrc) {
             g: 0,
             b: 0
         },
-        canvas = new Canvas(),
+        canvas = Canvas.createCanvas(),
         context = canvas.getContext('2d'),
         data, width, height,
         i = -4,
